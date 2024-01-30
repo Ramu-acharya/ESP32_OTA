@@ -9,8 +9,8 @@ void loop() {
   int thermistor_adc_val;
   double output_voltage, thermistor_resistance, therm_res_ln, temperature; 
   thermistor_adc_val = analogRead(thermistor_output);
-  output_voltage = ( (thermistor_adc_val * 5) / 1023.0 );
-  thermistor_resistance = ( ( 5 * ( 10.0 / output_voltage ) ) - 10 ); /* Resistance in kilo ohms */
+  output_voltage = ( (thermistor_adc_val * 3.2) / 1023.0 );
+  thermistor_resistance = ( ( 3.2 * ( 10.0 / output_voltage ) ) - 10 ); /* Resistance in kilo ohms */
   thermistor_resistance = thermistor_resistance * 1000 ; /* Resistance in ohms   */
   therm_res_ln = log(thermistor_resistance);
   /*  Steinhart-Hart Thermistor Equation: */
