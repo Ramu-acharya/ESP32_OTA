@@ -1,3 +1,4 @@
+//Combined of DHT22 and DST18B20
 #include <OneWire.h>
 #include "DHT.h"
 #include <DallasTemperature.h>
