@@ -1,13 +1,13 @@
 #define thermistorPin 4
-
 void setup() {
+  pinMode(thermistorPin,INPUT);
   Serial.begin(9600);
   analogReadResolution(10); // Set the ADC resolution to 12 bits
 }
 
 void loop() {
   float value = analogRead(thermistorPin);
-  float vout = ((float)value / 1024) * 3.2*1000;
+  float vout = ((float)value / 1024) * 3.3*1000;
   float temperature = (float)vout/10;
   float fahrenheit = (float)temperature*(9/5)+32;
   Serial.print("Raw value: ");
