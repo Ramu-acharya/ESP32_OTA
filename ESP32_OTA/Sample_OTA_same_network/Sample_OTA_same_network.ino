@@ -1,5 +1,5 @@
 //Make sure network for pc and esp32 should be same
-//Go through the Readme.md file
+//Go through the Readme.md file for step wise understanding
 #include <WiFi.h>
 #include <ArduinoOTA.h>
 
