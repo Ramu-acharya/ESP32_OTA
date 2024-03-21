@@ -1,3 +1,4 @@
+//Make sure network for pc and esp32 should be same
 #include <WiFi.h>
 #include <ArduinoOTA.h>
 
