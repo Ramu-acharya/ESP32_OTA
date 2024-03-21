@@ -27,7 +27,7 @@ void loop() {
   ArduinoOTA.handle(); // Handle OTA updates
 
   digitalWrite(LED_BUILTIN, HIGH); // Turn the LED on
-  delay(500);                      // Wait for a second
+  delay(1000);                      // Wait for a second
   digitalWrite(LED_BUILTIN, LOW);  // Turn the LED off
-  delay(300);                      // Wait for a second
+  delay(1000);                      // Wait for a second
 }
